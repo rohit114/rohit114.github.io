@@ -4,6 +4,10 @@
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/CSS/main.css">
+      <link rel="stylesheet" type="text/css" href="/CSS/card.css">
+      <link rel="stylesheet" type="text/css" href="/CSS/skill-bar.css">
+       <link rel="stylesheet" type="text/css" href="/CSS/timeline.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		</head>
 		<body>
 			<nav>
@@ -21,9 +25,192 @@
 				
 			</ul>	
 			<div class="container">
-			
-			{{ content }}
-			
+        <div style="display: flex;justify-content: space-between;">
+          <div class="card">
+            <img src="../images/mypic.png" alt="Rohit" style="width:60%">
+            <h2>Rohit Kumar</h2>
+            <p class="title">Backend Developer</p>
+            <p>NIT Jaipur</p>
+            <p class="bio"> Hi! I’m Rohit,a keen learner,geeky,explorer and NIT-Jaipur Computer Science and Engineering graduate. Loves to Code <3. Likes to work which is equally challenging and interesting which not only motivates me to give my 100% but also provides me an opportunity to grow as a person with the vision to make this world a simpler place to live in</p> <br/>
+
+          </div>
+          <!-- skill bar starts -->
+          
+            <div class="container" >
+              <div class="wrapper">
+                <div class = "programming">Programming:- C++, Python, JavaScript </div>
+              </div>
+              <div class="wrapper">
+                <div class = "backend">Backend Stack:- NodesJS, SailsJS, ExpressJS, Djnago </div>
+              </div>
+              <div class="wrapper">
+                <div class = "database">Databases:- PSQL, MySQL, NoSQL (MongoDB)</div>
+              </div>
+              <div class="wrapper">
+                <div class = "academics">Data Structures & Algorithms, DBMS, Computer Networks, Operating System </div>
+              </div>
+              <div class="wrapper">
+                <div class = "others">Others:- Git, Redis, Node Cron, Bash scripting, ReactJS/Redux, AWS,CDN, Intel-8086,HTML/CSS, Adobe Illustartor</div>
+              </div>
+              <br/>
+               <div class="description">
+                <a href="http://yulu.bike/"><img src="images/yulu-logo.png" alt="linkedin logo" height="60" width="150"> </a> <p style="padding-bottom:10px">Member Of Technical Staff <span> September 2019 - Present</span></p>
+                <a href="http://yulu.bike/"><img src="images/mymandir-icon.png" alt="linkedin logo" height="60" width="60"> </a> <p>Backend Developer <span> August 2018 - September 2019</span></p>
+               </div>
+
+               </div>
+            </div>
+
+          </div>
+          <!-- skill bar ends -->
+
+          <!-- Timeline Starts-->
+          <ul class="timeline">
+            <!-- Item 0 -->
+            <li>
+              <div class="direction-l">
+                <div class="flag-wrapper">
+                  <span class="hexa"></span>
+                  <span class="flag"> EKA (a Meditation App)</span>
+                  <span class="time-wrapper"><span class="time">April 2019 – July 2019</span></span>
+                </div>
+                <div class="desc"> Guided & Un-Guided mediation availble in Hindi and English Language.
+                <ul>
+                  <li>Backend Stack: NodeJS/SailsJs, PostgreSQL, AWS, PM2.
+                     Availble on Android & iOS
+                    <a href="https://play.google.com/store/apps/details?id=com.ekameditation" style="color: orange" > { Visit } </a>
+                  </li>
+                
+                </ul>
+                </div>
+              </div>
+            </li>
+             <!-- Item 1 -->
+            <li>
+              <div class="direction-r">
+                <div class="flag-wrapper">
+                  <span class="hexa"></span>
+                  <span class="flag"> Barfi (a chat fiction App)</span>
+                  <span class="time-wrapper"><span class="time">April 2019 – July 2019</span></span>
+                </div>
+                <div class="desc"> Bite size fascinating short stories of various genere. Wrote the the APIs, Designed the Database schema from scratch.
+                <ul>
+                  <li>Backend Stack: NodeJS/SailsJs, PostgreSQL, AWS, PM2
+                    <a href="https://play.google.com/store/apps/details?id=co.barfi" style="color: orange" > { Visit } </a>
+                  </li>
+                
+                </ul>
+                </div>
+              </div>
+            </li>
+            <!-- Item 2 -->
+            <li>
+              <div class="direction-l">
+                <div class="flag-wrapper">
+                  <span class="hexa"></span>
+                  <span class="flag"> Projects done at mymandir</span>
+                  <span class="time-wrapper"><span class="time">Aug 2018- Sept 2019</span></span>
+                </div>
+                <div class="desc">
+                Tech Stack: NodeJs/SailsJs, JavaScript, PostgreSQL, Redis, AWS, Django
+                <ul>
+                  <li>Writing scalable APIs which is consumed by Mymandir android app and web apps. Fixing various Backend Bugs
+                  
+                  </li>
+                  <li>
+                    Designed Django Admin dashboard for mymandir. Used by content team to perfororm various tasks like add/delete/enable/desable InApps, stickes, playlist & many more...
+                  </li>
+                  <li>
+                    Youtube Service:s
+                    Finds top videos of MyMnadir App from last 24Hrs and Uploads every day to all its nine
+                    youtube channels of different languages
+                    The script is written in Javascript, Redis to queue the URLs of videos to be
+                    uploaded, Node cron to schedule the job to run the script every midnight
+                  </li>
+                </ul>
+                </div>
+              </div>
+            </li>
+
+            <!-- Item 3 -->
+            <li>
+              <div class="direction-r">
+                <div class="flag-wrapper">
+                  <span class="hexa"></span>
+                  <span class="flag">Learning app for kids</span>
+                  <span class="time-wrapper"><span class="time">Mar 2017 – May 2017</span></span>
+                </div>
+                <div class="desc"> This project was under Unnat Bharat from MHRD done under guidence of my Prof. Nammita Mittal (CSE dept. MNIT-jaipur)
+                <ul>
+                  <li>Tech Stack:Android, Volley, MYSQL, PHP.<a href="https://github.com/rohit114/Abhyas" style="color: orange" >  { Source code },</a>
+                    <a href="https://angel.co/projects/732854-abhyas-learning-app-for-kids-an-mhrd-project-under-unnat-bharat-abhiyan?src=user_profile" style="color: orange" > { Visit } </a>
+                  </li>
+                  <li>
+                 Interactive learning content with attarctive graphics and animation,
+                 Quizzes for each chapter, Teachers can host a quiz on the app for students,
+                 Stores performance of kids in different Quizzes
+                  </li>
+                </ul>
+                </div>
+              </div>
+            </li>
+
+            <!-- Item 4 -->
+            <li>
+              <div class="direction-l">
+                <div class="flag-wrapper">
+                  <span class="hexa"></span>
+                  <span class="flag">Rail Route Application </span>
+                  <span class="time-wrapper"><span class="time">April 2017 - May 2017</span></span>
+                </div>
+                <div class="desc">
+                  Tech Stack: Android, Volley, MYSQL, PHP
+                  <ul>
+                    <li> Find the Shortest Path in Railway Routes using Dijkstra's Algorithm
+                    Designed for Android.
+                    <a href="https://github.com/rohit114/Rail_Route" style="color: orange" > { Source code },</a>
+                    <a href="https://angel.co/projects/623170-rail-route-application-using-dijkstra-s-algorithm?src=user_profile" style="color: orange" > { Visit } </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+
+            <!-- Item 5 -->
+            <li>
+              <div class="direction-r">
+                <div class="flag-wrapper">
+                  <span class="hexa"></span>
+                  <span class="flag"> Online Classified Portal (OLX, Quikr)</span>
+                  <span class="time-wrapper"><span class="time">Nov 2016 - Dec 2016</span></span>
+
+                </div>
+                <div class="desc">
+                  Tech Stack: MYSQL, PHP, HTML5/CSS, LAMPP
+                  <ul>
+
+                 <li>You can sell your old stuffs by posting your advertisement.
+                 If you want to buy something you can search your desired stuffs by filtering among product category , price , area.
+                </li>
+                <li>Only registered users can post advertisements and message the seller, but anyone can view advertisement on our timeline.
+                </li>
+                <li>Approval of post by admin to ensure genuine advertisement only.We show only those advertisements on our timeline which are approved by our admin.
+                </li>
+                <li>You can message the seller & make negotiation with seller,
+                User can only view the profile of buyers who have messaged you.
+                </li>
+                <li>
+                 <a href="https://github.com/rohit114/Online_Classified_Portal" style="color: orange" > { Source code },</a>
+                 <a href="https://angel.co/projects/762250-khareedo-becho-online-classified-portal-similar-to-olx-quikar?src=user_profile" style="color: orange" > { Visit } </a>
+
+                </li>
+
+                </ul>
+              </div>
+              </div>
+            </li>
+          </ul>
+          <!-- Timeline Ends-->
 			</div><!-- /.container -->
 			<footer>
 	    		<ul>
